@@ -1,0 +1,31 @@
+igme230-project4-proposal.txt
+
+Project Proposal (submit to myCourses and post to GitHub by 8am on Monday, 24 April)
+
+Before thinking about the technical aspects of your project, take some time to consider how you would like to approach it. What kind of experience do you intend to create? How will the three drawings relate to each other aesthetically and/or conceptually? What kind of interactivity will there be and how will you achieve it?
+
+Required Proposal Elements
+
+-A brief (~200 word) description of what you plan to do
+
+1. A page that is similar to what is viewable at http://pbskids.org/.
+   A page that shows a camera that is clickable and shows cartoon/svg versions of my family members spinning in.  The svg images will be clickable and link to a page that shows more photos of them.
+
+2. I'm also interested in a space animation similar to what Brandon Littell has done in the top portion of his web page at http://www.brandonlittell.com/  Maybe use a different shapes of objects floating in space.  I would not have them connect to each other.
+
+3. I'm interested in electric bicycles.  I would create a an electric bicycle based on https://www.onlinewebfonts.com/icon/557753 riding down sidewalks, trails, and streets.
+
+
+
+-Sketches (hand-drawn, digitally designed, or coded) to illustrate your ideas for the navigation page and the illustrations
+
+-If you are proposing to work with a partner, a clear breakdown of each person's individual responsibilities
+ no partner
+
+-A description of what you will need to learn in order to implement your idea, and what resources you'll use to accomplish that.
+javascript manipulation of svg images
+how to convert photos into svg images.
+
+-A link to the GitHub repository for your project (see below)
+  https://github.com/artisd/igme230-project4
+
