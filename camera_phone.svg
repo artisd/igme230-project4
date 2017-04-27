@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #030303;
+      }
+
+      .cls-2 {
+        fill: #faf7f8;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="camera_phone_body" data-name="camera phone body" class="cls-1" x="192" y="96" width="481" height="241" rx="10" ry="10"/>
+  <circle id="bottom_camera_lens_cutout" data-name="bottom camera lens cutout" class="cls-2" cx="264.5" cy="264.5" r="24.5"/>
+  <circle id="top_camera_lens_cutout" data-name="top camera lens cutout" class="cls-2" cx="264.5" cy="168.5" r="24.5"/>
+  <rect id="rectangle_between_camera_lenses" data-name="rectangle between camera lenses" class="cls-2" x="240" y="168" width="49" height="97"/>
+  <path id="top_camera_lens" data-name="top camera lens" class="cls-3" d="M264,158a10,10,0,1,1-10,10A10,10,0,0,1,264,158Zm0,0a10,10,0,1,1-10,10A10,10,0,0,1,264,158Zm0,0a10,10,0,1,1-10,10A10,10,0,0,1,264,158Z"/>
+  <circle id="bottom_camera_lens" data-name="bottom camera lens" cx="264" cy="264" r="10"/>
+  <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" x="312" y="89" width="97" height="15" rx="7.5" ry="7.5"/>
+</svg>
