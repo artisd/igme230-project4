@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alexei Tetenov's Project 4 - photo</title>
+    <link rel="stylesheet" href="photo.css">
+    <script src="js/snap.svg.js"></script>
+</head>
+
+<body>
+
+    <div class="snap-stage">
+
+        <!-- show a camera flash going off under the camera once the person clicks on the camera -->
+        <svg version="1.1" id="flash-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 290 290">
+		      <radialgradient id="flash_gradient" cx="145.0046" cy="145.0046" r="145.0046" gradientunits="userSpaceOnUse">
+			      <stop offset="0" style="stop-color:#FFFFFF"></stop>
+			      <stop offset="0" class="slider" style="stop-color:#FFFFFF;stop-opacity:0.8741"></stop>
+			      <stop offset="1" style="stop-color:#FFFFFF;stop-opacity:0"></stop>
+		      </radialgradient>
+		      <circle fill="url(#flash_gradient)" cx="145" cy="145" r="145"></circle>
+		    </svg>
+
+
+        <!-- show a camera and an arrow bouncing above the camera -->
+
+        <svg id="camera-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85px" height="132px" viewbox="0 0 85 132">
+		 	    <polygon id="camera-arrow" fill="#FFFFFF" points="48.682,24.93 48.363,2.064 35.229,2.064 36.078,24.87 23.167,24.81 42.218,44.018 63.236,24.998 "></polygon>
+		 	
+			    <g id="camera-button" data-action="photo-trigger">
+				    <rect x="8.107" y="53.707" fill="#1A3139" width="13.514" height="12.182"></rect>
+				    <line fill="none" stroke="#3D575E" stroke-width="2" stroke-miterlimit="10" x1="12.151" y1="55.375" x2="12.151" y2="62.132"></line>
+				    <line fill="none" stroke="#3D575E" stroke-width="2" stroke-miterlimit="10" x1="16.891" y1="55.375" x2="16.891" y2="62.132"></line>
+            <path fill="#3D575E" d="M8.107,53.707h13.514C21.621,53.707,15.529,60.773,8.107,53.707z"></path>
+            <rect x="65.959" y="53.515" fill="#1A3139" width="10.642" height="13.705"></rect>
+            <rect y="62.132" fill="#CFD5D8" width="84.455" height="54.747"></rect>
+            <polygon fill="#CFD5D8" points="59.456,65.037 24.998,65.037 31.654,50.849 52.802,50.849"></polygon>
+            <rect y="71.273" fill="#1A3139" width="84.455" height="35.133"></rect>
+            <rect x="36.137" y="57.402" fill="#1A3139" width="12.837" height="7.432"></rect>
+            <circle fill="#293F44" cx="5.743" cy="78.368" r="2.534"></circle>
+            <circle fill="#293F44" cx="15.06" cy="78.368" r="2.534"></circle>
+            <circle fill="#293F44" cx="5.743" cy="91.677" r="2.534"></circle>
+            <circle fill="#293F44" cx="10.135" cy="84.955" r="2.533"></circle>
+            <circle fill="#293F44" cx="10.135" cy="98.13" r="2.533"></circle>
+            <circle fill="#293F44" cx="15.06" cy="91.677" r="2.534"></circle>
+            <circle fill="#293F44" cx="69.084" cy="78.368" r="2.534"></circle>
+            <circle fill="#293F44" cx="78.401" cy="78.368" r="2.534"></circle>
+            <circle fill="#293F44" cx="69.084" cy="91.677" r="2.534"></circle>
+            <circle fill="#293F44" cx="73.476" cy="84.955" r="2.534"></circle>
+            <circle fill="#293F44" cx="73.476" cy="98.13" r="2.534"></circle>
+            <circle fill="#293F44" cx="78.401" cy="91.677" r="2.534"></circle>
+            <circle fill="#3D575E" cx="42.832" cy="91.164" r="21.727"></circle>
+            <circle fill="#1BE8CF" cx="42.833" cy="91.164" r="13.522"></circle>
+        
+            <ellipse transform="matrix(0.7071 0.7071 -0.7071 0.7071 72.2723 -1.6654)" fill="#FFFFFF" cx="38.146" cy="86.408" rx="3.381" ry="5.071"></ellipse>
+            <path fill="#3D575E" d="M65.959,53.515h10.642C76.601,53.515,71.926,60.217,65.959,53.515z"></path>
+          </g>
+		  </svg>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

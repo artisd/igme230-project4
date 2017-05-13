@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alexei Tetenov's Project 4 - photo</title>
+    <link rel="stylesheet" href="photo.css">
+    <script src="js/snap.svg.js"></script>
+</head>
+
+<body>
+
+    <div class="camera_phone">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #030303;
+            }
+
+            .cls-2, .cls-4 {
+              fill: #faf7f8;
+            }
+
+            .cls-3, .cls-4 {
+              fill-rule: evenodd;
+            }
+          </style>
+        </defs>
+
+        <!-- have the arrow bouncing up and down towards the smartphone volume rocker, which normally takes a picture, in this case, display a picture -->
+        <g stroke="none" >
+
+          <!-- svg for the arrow -->
+          <path id="arrow" class="cls-4" d="M339.521,99.015v88.607H301.993L374.5,267.985l72.507-80.363H409.479V99.015H339.521Z"/>
+
+          <!-- have the arrow bouncing up and down towards the smartphone volume rocker -->
+          <animateTransform begin="click" attributeName="transform" type="rotate" dur="0.5s" from="0 20 20" to="-90 20 20" fill="freeze" />
+          type="rotate" dur="0.5s" from="0 20 20" to="-90 20 20" fill="freeze" />
+        </g>
+
+
+        <!-- once the user clicks the smarphone camera body, show pictures -->
+
+        <rect id="camera_phone_body" data-name="camera phone body" class="cls-1" x="192" y="296" width="481" height="241" rx="10" ry="10"/>
+        <circle id="bottom_camera_lens_cutout" data-name="bottom camera lens cutout" class="cls-2" cx="264.5" cy="464.5" r="24.5"/>
+        <circle id="top_camera_lens_cutout" data-name="top camera lens cutout" class="cls-2" cx="264.5" cy="368.5" r="24.5"/>
+        <rect id="rectangle_between_camera_lenses" data-name="rectangle between camera lenses" class="cls-2" x="240" y="368" width="49" height="97"/>
+        <path id="top_camera_lens" data-name="top camera lens" class="cls-3" d="M264,358a10,10,0,1,1-10,10A10,10,0,0,1,264,358Zm0,0a10,10,0,1,1-10,10A10,10,0,0,1,264,358Zm0,0a10,10,0,1,1-10,10A10,10,0,0,1,264,358Z"/>
+        <circle id="bottom_camera_lens" data-name="bottom camera lens" cx="264" cy="464" r="10"/>
+        <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" x="312" y="289" width="97" height="15" rx="7.5" ry="7.5"/>
+
+      </svg>
+
+
+
+        <!-- show a camera flash going off under the camera once the person clicks on the camera -->
+        <svg version="1.1" id="flash-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 290 290">
+		      <radialgradient id="flash_gradient" cx="125.0046" cy="125.0046" r="125.0046" gradientunits="userSpaceOnUse">
+			      <stop offset="0" style="stop-color:#FFFFFF"></stop>
+			      <stop offset="0" class="slider" style="stop-color:#FFFFFF;stop-opacity:0.8741"></stop>
+			      <stop offset="1" style="stop-color:#FFFFFF;stop-opacity:0"></stop>
+		      </radialgradient>
+		      <circle fill="url(#flash_gradient)" cx="125" cy="125" r="125"></circle>
+		    </svg>
+
+    </div>
+
+    <script>
+        /* snap canvas at 100% */
+        var snapCanvas = Snap();
+
+        var bigCircle = snapCanvas.circle(100, 100, 50);
+
+        Snap.load("image/camera_phone_with_arrow.svg", function(f) {
+            snapCanvas.append(f.select("g"));
+        });
+    </script>
+
+</body>
+
+</html>

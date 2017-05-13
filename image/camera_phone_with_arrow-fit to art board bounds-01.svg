@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360.7 328.45">
+  <title>camera_phone_with_arrow-fit to art board bounds</title>
+  <g id="camera_phone_body" data-name="camera phone body" style="isolation: isolate">
+    <g id="camera_phone_body-2" data-name="camera phone body">
+      <rect y="147.72" width="360.7" height="180.73" rx="7.5" ry="7.5" fill="#030303"/>
+    </g>
+  </g>
+  <g id="bottom_camera_lens_cutout" data-name="bottom camera lens cutout" style="isolation: isolate">
+    <g id="bottom_camera_lens_cutout-2" data-name="bottom camera lens cutout">
+      <circle cx="54.37" cy="274.08" r="18.37" fill="#faf7f8"/>
+    </g>
+  </g>
+  <g id="top_camera_lens_cutout" data-name="top camera lens cutout" style="isolation: isolate">
+    <g id="top_camera_lens_cutout-2" data-name="top camera lens cutout">
+      <circle cx="54.37" cy="202.09" r="18.37" fill="#faf7f8"/>
+    </g>
+  </g>
+  <g id="rectangle_between_camera_lenses" data-name="rectangle between camera lenses" style="isolation: isolate">
+    <g id="rectangle_between_camera_lenses-2" data-name="rectangle between camera lenses">
+      <rect x="36" y="201.71" width="36.75" height="72.74" fill="#faf7f8"/>
+    </g>
+  </g>
+  <g id="top_camera_lens" data-name="top camera lens" style="isolation: isolate">
+    <g id="top_camera_lens-2" data-name="top camera lens">
+      <circle cx="53.99" cy="201.71" r="7.5"/>
+    </g>
+  </g>
+  <g id="bottom_camera_lens" data-name="bottom camera lens" style="isolation: isolate">
+    <g id="bottom_camera_lens-2" data-name="bottom camera lens">
+      <circle cx="53.99" cy="273.7" r="7.5"/>
+    </g>
+  </g>
+  <g id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" style="isolation: isolate">
+    <g id="Rounded_Rectangle_1-2" data-name="Rounded Rectangle 1">
+      <path d="M157.11,142.47H95.61a5.62,5.62,0,0,0,0,11.25h61.49A5.62,5.62,0,0,0,157.11,142.47Z" fill-rule="evenodd"/>
+    </g>
+  </g>
+  <g id="arrow" style="isolation: isolate">
+    <g id="arrow-2" data-name="arrow">
+      <polygon points="163.09 66.45 163.09 0 110.63 0 110.63 66.45 82.48 66.45 136.86 126.71 191.23 66.45 163.09 66.45" fill="#faf7f8" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
