@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alexei Tetenov's Project 4 - snap_camera_phone_with_arrow </title>
+    <script src="js/snap.svg.js"></script>
+</head>
+
+<body>
+
+
+
+    <script>
+        /* snap canvas at 100% */
+        var snapCanvas = Snap();
+
+        var bigCircle = snapCanvas.circle(100, 100, 50);
+
+        Snap.load("image/camera_phone_with_arrow.svg", function(f) {
+            snapCanvas.append(f.select("camera_phone_body"));
+        });
+
+
+        /* example from http://svg.dabbles.info/snaptut-image */
+        var s = Snap("#svgout");
+        var g = s.g();
+
+        var image = g.image("tux.svg", 0, 0, 200, 200);
+        var clone = image.clone();
+
+        clone.transform('t100,200r45');
+    </script>
+</body>
+
+</html>
