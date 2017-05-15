@@ -122,9 +122,38 @@ window.onload = function() {
             // do stuff
             //hide the flash after flashing it
             $('#flash-svg').css({ "opacity": 0 });
+
+            //hide this camera_flash_div so that the next person picture moves up
+            var camera_flash_div = document.getElementById('camera_flash');
+            camera_flash_div.style.display = 'none';
+
         }, 300); // end delay
 
+
+
     };
+
+
+
+    function show_camdens_svg() {
+
+        var camden_svg = Snap('#camden');
+
+        //create a variable to reference the camden_group object within my #camden svg object
+        var camden_group = camden_svg.select("#camden_group");
+        $('#camden_group').css({ "opacity": 100 });
+    };
+
+
+    function hide_camdens_svg() {
+
+        var camden_svg = Snap('#camden');
+
+        //create a variable to reference the camden_group object within my #camden svg object
+        var camden_group = camden_svg.select("#camden_group");
+        $('#camden_group').css({ "opacity": 0 });
+    };
+
 
     //trying to figure out how ot hide the camera flash until the smartphone body is clicked.
 
@@ -142,6 +171,7 @@ window.onload = function() {
         camera_flash.style.display = 'none';
         */
 
+
     //https://stackoverflow.com/questions/27105895/hide-svg-elements-with-javascript
     var camera_flash = $('#flash-svg');
     //camera_flash.detach();
@@ -149,6 +179,7 @@ window.onload = function() {
     //$('#play-button').css({ "opacity": 0 });
     $('#flash-svg').css({ "opacity": 0 });
 
+    hide_camdens_svg();
 
 
     //execute the function to flash the camera_flash on and off
@@ -172,6 +203,7 @@ window.onload = function() {
 
         //execute the function to flash the camera_flash on and off
         animate_flash_action();
+        show_camdens_svg();
     });
 
 };
