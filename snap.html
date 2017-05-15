@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <title>Alexei Tetenov's Project 4 - photo</title>
     <script src="js/snap.svg.js"></script>
-    <script src="js/prism.js"></script>
 </head>
 
 <body>
 
 
     <script>
-        var s = Snap("#svgout");
+        // example from http://svg.dabbles.info/snaptut-base
+        /*
+        var s = Snap("#svgout");  //this uses a pre-existing svg object namedsvgout 
+        var rect = Snap().rect(0, 0, 10, 10);
+        */
+        var s = Snap();
+
+        var rect = s.rect(0, 0, 10, 10);
 
         //lets draw 2 rects at position 100,100 and then reposition them
 
@@ -23,7 +29,40 @@
             'opacity': 0.2
         });
 
-        var t = s.text(100, 50, 'Snap("#svg") should reference an svg element, not a div. Or create it by supplying width,height Snap(100,100)');
+        //var t = s.text(100, 50, 'Snap("#svg") should reference an svg element, not a div. Or create it by supplying width,height Snap(100,100)');
+
+
+        /*
+
+             * Snap.animate
+             [ method ]
+             **
+             * Runs generic animation of one number into another with a caring function
+             **
+             - from (number|array) number or array of numbers
+             - to (number|array) number or array of numbers
+             - setter (function) caring function that accepts one number argument
+             - duration (number) duration, in milliseconds
+             - easing (function) #optional easing function from @mina or custom
+             - callback (function) #optional callback function to execute when animation ends
+             = (object) animation object in @mina format
+             o {
+             o     id (string) animation id, consider it read-only,
+             o     duration (function) gets or sets the duration of the animation,
+             o     easing (function) easing,
+             o     speed (function) gets or sets the speed of the animation,
+             o     status (function) gets or sets the status of the animation,
+             o     stop (function) stops the animation
+             o }
+             | var rect = Snap().rect(0, 0, 10, 10);
+             | Snap.animate(0, 10, function (val) {
+             |     rect.attr({
+             |         x: val
+             |     });
+             | }, 1000);
+             | // in given context is equivalent to
+             | rect.animate({x: 10}, 1000);
+             */
     </script>
 
 </body>
