@@ -1,0 +1,31 @@
+html {
+    font-family: Poppins;
+}
+
+p,
+li {
+    font-size: 14px;
+}
+
+#content {
+    width: 500px;
+    /* centers the body in the viewport */
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    border-style: double;
+    border-width: 3px;
+    border-color: blue;
+    padding: 10px;
+}
+
+
+}
+@media all and (max-width: 640px) {
+    #content {
+        width: 95%;
+    }
+}

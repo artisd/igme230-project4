@@ -1,5 +1,11 @@
 html {
     background-color: blue;
+    font-family: Poppins;
+}
+
+p,
+li {
+    font-size: 14px;
 }
 
 .polaroid-theme #camera-arrow.bouncing {
